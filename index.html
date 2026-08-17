@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An open technology portfolio for health, food, and construction.">
+    <meta name="theme-color" content="#f6f4ee">
+    <title>Technology Product Portfolio</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body data-page="landing">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="shell masthead">
+        <a class="wordmark" href="index.html">Technology Product Portfolio</a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="construction.html">Construction</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="shell">
+          <p class="eyebrow">Open production knowledge</p>
+          <h1>Technology for essential systems</h1>
+          <p class="hero__intro">
+            Explore documented open-source technology projects for health, food, and
+            construction—organized for comparison, research, and practical discovery.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="domains-title">
+        <div class="shell">
+          <h2 id="domains-title">Explore the portfolio</h2>
+          <p class="section__intro">
+            Each domain has its own terminology and data structure. Choose a portfolio to
+            search its projects and browse the categories that matter in that field.
+          </p>
+          <div class="domain-grid">
+            <article class="domain-card domain-card--health">
+              <h2>Health</h2>
+              <p>
+                Devices, instruments, diagnostics, care infrastructure, rehabilitation,
+                and training technologies.
+              </p>
+              <a class="domain-card__link" href="health.html">Explore Health</a>
+              <span class="domain-card__count" data-count-domain="health">Browse the dataset</span>
+            </article>
+
+            <article class="domain-card domain-card--food">
+              <h2>Food</h2>
+              <p>
+                Technologies for farming, monitoring, processing, packaging, logistics,
+                and food-system operations.
+              </p>
+              <a class="domain-card__link" href="food.html">Explore Food</a>
+              <span class="domain-card__count" data-count-domain="food">Browse the dataset</span>
+            </article>
+
+            <article class="domain-card domain-card--construction">
+              <h2>Construction</h2>
+              <p>
+                Surveying, fabrication, building systems, masonry, material handling,
+                and workshop technologies.
+              </p>
+              <a class="domain-card__link" href="construction.html">Explore Construction</a>
+              <span class="domain-card__count" data-count-domain="construction">Browse the dataset</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="durability-title">
+        <div class="shell">
+          <p class="eyebrow">Data stewardship</p>
+          <h2 id="durability-title">A durable public record</h2>
+          <p class="section__intro">
+            The portfolio is mirrored from its source workbook and converted into
+            versioned, inspectable JSON. The website adds presentation without changing
+            the underlying records.
+          </p>
+          <ul class="principles">
+            <li>
+              <strong>Open formats</strong>
+              <span>ODS and JSON remain readable without a proprietary platform.</span>
+            </li>
+            <li>
+              <strong>Traceable sources</strong>
+              <span>Every dataset records its workbook, worksheet, and source digest.</span>
+            </li>
+            <li>
+              <strong>Simple delivery</strong>
+              <span>Plain HTML, CSS, and JavaScript work on any ordinary static host.</span>
+            </li>
+          </ul>
+          <p class="measure">
+            <a href="res/var/data/technology-product-portfolio.ods" download>Download the ODS mirror</a>
+            or review the <a href="spec/README.md">data specifications</a>.
+          </p>
+          <noscript>
+            <p class="measure">
+              JavaScript is not required to download the data:
+              <a href="res/var/data/health.json">Health JSON</a>,
+              <a href="res/var/data/food.json">Food JSON</a>, and
+              <a href="res/var/data/construction.json">Construction JSON</a>.
+            </p>
+          </noscript>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-layout">
+        <div>
+          <p><strong>Technology Product Portfolio</strong></p>
+          <p class="footer-note">
+            Curated by Victoria Wenzelmann, Enrico Bassi, and J.C. Mariscal-Melgar.
+          </p>
+        </div>
+        <p class="footer-note">
+          “Fab City – Decentralized Digital Production for Urban Value Creation” is
+          funded by dtec.bw and supported by the European Union – NextGenerationEU.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

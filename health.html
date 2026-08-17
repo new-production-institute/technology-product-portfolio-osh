@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browse open technology projects for health and medical care.">
+    <meta name="theme-color" content="#f6f4ee">
+    <title>Health | Technology Product Portfolio</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body data-page="catalog" data-domain="health">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="shell masthead">
+        <a class="wordmark" href="index.html">Technology Product Portfolio</a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="health.html" aria-current="page">Health</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="construction.html">Construction</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero hero--domain">
+        <div class="shell">
+          <p class="eyebrow">Portfolio domain</p>
+          <h1>Health</h1>
+          <p class="hero__intro">
+            Open technology projects for diagnosis, field and hospital care,
+            rehabilitation, training, and medical infrastructure.
+          </p>
+          <div class="hero__meta">
+            <span class="hero__count" data-total-count>Portfolio dataset</span>
+            <a href="res/var/data/health.json" download>Download Health JSON</a>
+            <a href="spec/health/health.schema.json">View the schema</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="catalog-title">
+        <div class="shell">
+          <header class="catalog-header">
+            <h2 id="catalog-title">Browse Health projects</h2>
+            <p class="section__intro">
+              Search project descriptions or narrow the portfolio by functional category
+              and care phase. Open a row for manufacturing, readiness, licensing, and source details.
+            </p>
+          </header>
+
+          <form class="catalog-controls" data-controls role="search" aria-label="Health catalog controls">
+            <div class="control">
+              <label for="catalog-search">Search Health projects</label>
+              <input id="catalog-search" data-search type="search" autocomplete="off" placeholder="Name, purpose, producer, process…">
+            </div>
+            <div class="control">
+              <label for="catalog-sort">Sort projects</label>
+              <select id="catalog-sort" data-sort>
+                <option value="asc">Name A–Z</option>
+                <option value="desc">Name Z–A</option>
+              </select>
+            </div>
+            <button class="button" data-reset type="button">Reset</button>
+          </form>
+
+          <div class="catalog-layout">
+            <aside aria-label="Health project filters">
+              <details class="filter-panel" data-filter-panel open>
+                <summary>Filter projects</summary>
+                <div class="filter-groups" data-facets>
+                  <p>Loading filters…</p>
+                </div>
+              </details>
+            </aside>
+
+            <section aria-labelledby="results-title">
+              <header class="results-header">
+                <h3 id="results-title">Projects</h3>
+                <p class="results-count" data-results-count aria-live="polite">Loading data…</p>
+              </header>
+              <div class="catalog-results" data-results>
+                <p class="empty-state">Loading Health portfolio data…</p>
+              </div>
+              <noscript>
+                <p class="error-state">
+                  Enable JavaScript to browse the catalog, or
+                  <a href="res/var/data/health.json">open the Health JSON data</a>.
+                </p>
+              </noscript>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-layout">
+        <div>
+          <p><strong>Health portfolio</strong></p>
+          <p class="footer-note">Presentation follows the Health dataset without altering its records.</p>
+        </div>
+        <p class="footer-note">
+          <a href="res/var/data/technology-product-portfolio.ods" download>Download the source ODS</a>
+          or return to the <a href="index.html">portfolio overview</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
