@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Health technology portfolio",
+  "description": "Normalized JSON representation of the Health worksheet in the mirrored technology product portfolio.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "source",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0",
+      "description": "Version of this JSON data contract."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "workbook",
+        "sheet",
+        "sha256"
+      ],
+      "properties": {
+        "workbook": {
+          "const": "res/var/data/technology-product-portfolio.ods"
+        },
+        "sheet": {
+          "const": "Health"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 digest of the exact ODS file used for conversion."
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/healthRecord"
+      }
+    }
+  },
+  "$defs": {
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stringList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "numberRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimum",
+        "maximum"
+      ],
+      "properties": {
+        "minimum": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maximum": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "trlRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimum",
+        "maximum"
+      ],
+      "properties": {
+        "minimum": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9
+        },
+        "maximum": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9
+        }
+      }
+    },
+    "healthRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceRow",
+        "curationStatus",
+        "flagship",
+        "flagshipRationale",
+        "name",
+        "producer",
+        "designer",
+        "purpose",
+        "description",
+        "category",
+        "functionalCategories",
+        "carePhases",
+        "sourceLinkText",
+        "urls",
+        "manufacturingProcesses",
+        "priceUsd",
+        "hardwareLicense",
+        "oshwaUid",
+        "technologyReadinessLevel",
+        "medicalCertification",
+        "euMedicalDeviceClass"
+      ],
+      "properties": {
+        "sourceRow": {
+          "type": "integer",
+          "minimum": 3,
+          "description": "One-based row number in the Health worksheet; retained for traceability, not as a permanent identifier.",
+          "x-transform": "source-row-number"
+        },
+        "curationStatus": {
+          "$ref": "#/$defs/nullableString",
+          "description": "Internal curation marker such as NPI-related or ?.",
+          "x-source-column": "Column 1",
+          "x-transform": "nullable-string"
+        },
+        "flagship": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Flagship",
+          "x-transform": "nullable-string"
+        },
+        "flagshipRationale": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Why Flagship",
+          "x-transform": "nullable-string"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "x-source-column": "Name",
+          "x-transform": "required-string"
+        },
+        "producer": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Producer / Maker",
+          "x-transform": "nullable-string"
+        },
+        "designer": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Designer",
+          "x-transform": "nullable-string"
+        },
+        "purpose": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Purpose (1 sentence)",
+          "x-transform": "nullable-string"
+        },
+        "description": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Description (can be longer)",
+          "x-transform": "nullable-string"
+        },
+        "category": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Category",
+          "x-transform": "nullable-string"
+        },
+        "functionalCategories": {
+          "$ref": "#/$defs/stringList",
+          "description": "Functional categories parsed as an RFC 4180-style CSV row so quoted labels containing commas remain intact.",
+          "x-source-column": "Functional Category",
+          "x-transform": "csv-string-list"
+        },
+        "carePhases": {
+          "$ref": "#/$defs/stringList",
+          "x-source-column": "Care Phase",
+          "x-transform": "csv-string-list"
+        },
+        "sourceLinkText": {
+          "$ref": "#/$defs/nullableString",
+          "description": "Original URL-column text retained because the source also contains bare DOIs and free-form notes.",
+          "x-source-column": "URL",
+          "x-transform": "nullable-string"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "uniqueItems": true,
+          "description": "Every HTTP or HTTPS URL extracted from the source cell, plus bare DOI values converted to https://doi.org URLs, preserving source order.",
+          "x-source-column": "URL",
+          "x-transform": "http-url-and-doi-list"
+        },
+        "manufacturingProcesses": {
+          "$ref": "#/$defs/stringList",
+          "x-source-column": "Manufacturing Processes",
+          "x-transform": "csv-string-list"
+        },
+        "priceUsd": {
+          "description": "A single non-negative USD amount, an inclusive minimum/maximum range, or null.",
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "$ref": "#/$defs/numberRange"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-source-column": "Price (USD)",
+          "x-transform": "number-or-hyphen-range"
+        },
+        "hardwareLicense": {
+          "$ref": "#/$defs/nullableString",
+          "description": "License text is preserved verbatim after trimming because the source includes SPDX identifiers and free-form values.",
+          "x-source-column": "Hardware License",
+          "x-transform": "nullable-string"
+        },
+        "oshwaUid": {
+          "$ref": "#/$defs/nullableString",
+          "description": "OSHWA UID source value. It is not pattern-constrained because the current worksheet includes unnormalized entries.",
+          "x-source-column": "OSHWA UID",
+          "x-transform": "nullable-string"
+        },
+        "technologyReadinessLevel": {
+          "description": "An integer TRL, an inclusive minimum/maximum range, or null.",
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9
+            },
+            {
+              "$ref": "#/$defs/trlRange"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-source-column": "TRL",
+          "x-transform": "integer-or-slash-range"
+        },
+        "medicalCertification": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Medical Certification",
+          "x-transform": "nullable-string"
+        },
+        "euMedicalDeviceClass": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Medical Device Class (EU MDR)",
+          "x-transform": "nullable-string"
+        }
+      }
+    }
+  },
+  "x-conversion": {
+    "input": "res/var/data/technology-product-portfolio.ods",
+    "sheet": "Health",
+    "output": "res/var/data/health.json",
+    "rows": {
+      "licenseReference": 1,
+      "header": 2,
+      "dataStart": 3
+    },
+    "skipRowWhenColumnIsBlank": "Name",
+    "cellText": {
+      "paragraphSeparator": "\n",
+      "trimOuterWhitespace": true
+    },
+    "transforms": {
+      "source-row-number": {
+        "result": "one-based ODS row number"
+      },
+      "required-string": {
+        "steps": [
+          "extract-cell-text",
+          "trim"
+        ]
+      },
+      "nullable-string": {
+        "steps": [
+          "extract-cell-text",
+          "trim",
+          "empty-string-to-null"
+        ]
+      },
+      "csv-string-list": {
+        "steps": [
+          "extract-cell-text",
+          "parse-single-rfc4180-record",
+          "trim-items",
+          "remove-empty-items",
+          "deduplicate-preserving-order"
+        ],
+        "delimiter": ",",
+        "quoteCharacter": "\"",
+        "emptyResult": []
+      },
+      "http-url-and-doi-list": {
+        "steps": [
+          "extract-cell-text",
+          "extract-http-and-https-urls-and-bare-dois",
+          "convert-bare-dois-to-https-doi-org-urls",
+          "deduplicate-preserving-order"
+        ],
+        "emptyResult": []
+      },
+      "number-or-hyphen-range": {
+        "steps": [
+          "extract-cell-text",
+          "trim",
+          "empty-string-to-null",
+          "parse-json-number-or-two-number-hyphen-range"
+        ],
+        "rangeResult": {
+          "minimum": "left number",
+          "maximum": "right number"
+        }
+      },
+      "integer-or-slash-range": {
+        "steps": [
+          "extract-cell-text",
+          "trim",
+          "empty-string-to-null",
+          "parse-json-integer-or-two-integer-slash-range"
+        ],
+        "rangeResult": {
+          "minimum": "left integer",
+          "maximum": "right integer"
+        }
+      }
+    }
+  }
+}
