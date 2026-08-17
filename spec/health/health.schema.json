@@ -120,7 +120,8 @@
         "oshwaUid",
         "technologyReadinessLevel",
         "medicalCertification",
-        "euMedicalDeviceClass"
+        "euMedicalDeviceClass",
+        "curationNotes"
       ],
       "properties": {
         "sourceRow": {
@@ -265,6 +266,12 @@
           "$ref": "#/$defs/nullableString",
           "x-source-column": "Medical Device Class (EU MDR)",
           "x-transform": "nullable-string"
+        },
+        "curationNotes": {
+          "$ref": "#/$defs/nullableString",
+          "description": "Internal notes from the unlabeled twentieth source column.",
+          "x-source-column": "Curation Notes",
+          "x-transform": "nullable-string"
         }
       }
     }
@@ -272,13 +279,21 @@
   "x-conversion": {
     "input": "res/var/data/technology-product-portfolio.ods",
     "sheet": "Health",
-    "output": "res/var/data/health.json",
+    "output": "res/data/health.js",
+    "serialization": {
+      "format": "javascript-es-module",
+      "export": "default",
+      "jsonIndent": 2
+    },
     "rows": {
       "licenseReference": 1,
       "header": 2,
       "dataStart": 3
     },
     "skipRowWhenColumnIsBlank": "Name",
+    "unnamedColumns": {
+      "20": "Curation Notes"
+    },
     "cellText": {
       "paragraphSeparator": "\n",
       "trimOuterWhitespace": true
