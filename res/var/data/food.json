@@ -1,0 +1,1377 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": {
+    "workbook": "res/var/data/technology-product-portfolio.ods",
+    "sheet": "Food",
+    "sha256": "1b603d6e443de704236d25962cc82c0a17c6bae52e5156575b4e269be780e01b"
+  },
+  "records": [
+    {
+      "sourceRow": 4,
+      "curationStatus": null,
+      "name": "Hutschienenmoped",
+      "producer": "Meisterschulen am Ostbahnhof, München",
+      "designer": "Franz Hoepfinger",
+      "purpose": "The Hutschienenmoped is an Open Source ISOBUS ECU designed for DIN rail mounting.",
+      "description": "It is an modular automation computer designed for DIN-rail mounting, serving as a cost-effective controller for agricultural machinery (as an ISOBUS ECU) and general industrial automation.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/",
+      "urls": [
+        "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CC-BY-SA-4.0",
+      "oshwaUid": "DE000145",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 5,
+      "curationStatus": null,
+      "name": "M5_COMMS",
+      "producer": "Fliegl Agrartechnik GmbH",
+      "designer": "Franz Hoepfinger",
+      "purpose": "M5_COMMS are CAN-Bus and Modbus Boards for M5 Stack",
+      "description": "CAN-Bus and Modbus boards designed for M5 Stack systems for agricultural communication modules.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/Fliegl-Agrartechnik-GmbH/M5_COMMS",
+      "urls": [
+        "https://github.com/Fliegl-Agrartechnik-GmbH/M5_COMMS"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CC-BY-SA-4.0",
+      "oshwaUid": "DE000146",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 6,
+      "curationStatus": null,
+      "name": "Water-Wise",
+      "producer": "Maker's Asylum",
+      "designer": "Prashast Kumar, Ahanah Hirani, and Anushkha Shah",
+      "purpose": "Water Wise is a smart irrigation system for urban homes that automates plant watering based on soil moisture levels",
+      "description": "It supports both automatic and manual modes, allowing users to monitor and water their plants remotely. Designed for consistency and convenience, Water Wise helps prevent under- or over-watering, especially when owners are away.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/MakersAsylumIndia/IS2025_Water-Wise",
+      "urls": [
+        "https://github.com/MakersAsylumIndia/IS2025_Water-Wise"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-S-2.0",
+      "oshwaUid": "IN000070",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 7,
+      "curationStatus": null,
+      "name": "Krushi Yantra",
+      "producer": "Ishaan Aras",
+      "designer": "Ishaan Aras",
+      "purpose": "Krushi Yantra v.3.0 is a remote-controlled smart farming bot that provides real-time soil data to help farmers optimize irrigation, boost productivity, and maintain soil health.",
+      "description": "Powered by a Raspberry Pi and made with a sturdy 3D printed structure, it features soil moisture, humidity, and temperature sensors with automated data logging. Aimed at small and marginal Indian farmers, it simplifies data collection and promotes smart, sustainable farming to improve yield and resource efficiency.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://drive.google.com/drive/folders/1x7azRLeZiXf08vlkIRhq-stQg9GmByBG",
+      "urls": [
+        "https://drive.google.com/drive/folders/1x7azRLeZiXf08vlkIRhq-stQg9GmByBG"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "GPL-3.0-or-later",
+      "oshwaUid": "IN000081",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 8,
+      "curationStatus": null,
+      "name": "Farmbot",
+      "producer": "Maker's Asylum",
+      "designer": "Ishaan Aras,Adit Motiwala,Ahaan Thakkar",
+      "purpose": "Solves an integral problem that farmers face: Unavailability of data in their crop fields.",
+      "description": "A 6-legged farm automation robot for crop fields, equipped with temperature, humidity, and soil moisture sensors.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://makersasylum.com/project/farmbot-v1-1/",
+      "urls": [
+        "https://makersasylum.com/project/farmbot-v1-1/"
+      ],
+      "manufacturingProcesses": [
+        "3D Printing"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "GPL-3.0-or-later",
+      "oshwaUid": "IN000065",
+      "technologyReadinessLevel": null,
+      "ceCertificate": "Yes"
+    },
+    {
+      "sourceRow": 9,
+      "curationStatus": null,
+      "name": "C.A.R.R.O.T.",
+      "producer": "Artemis Cherkaev",
+      "designer": "Artemis Cherkaev",
+      "purpose": "Customized Automated Resource Regulation and Optimization Technology!",
+      "description": "An inverted spike inserted into a hose and the ground to regulate water flow to plants.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/Artemis5010/C.A.R.R.O.T./tree/main",
+      "urls": [
+        "https://github.com/Artemis5010/C.A.R.R.O.T./tree/main"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "CA000048",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 10,
+      "curationStatus": null,
+      "name": "Parametric Cold-Frame Agrivoltaic Systems",
+      "producer": "WORLDiscoveries",
+      "designer": "Joshua M. Pearce",
+      "purpose": "This invention is a parametric open-source smart cold-frame agrivoltaic system (POSCAS).",
+      "description": "Functions as a small greenhouse for agricultural production and testing.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.mdpi.com/2411-5134/6/4/71/htm",
+      "urls": [
+        "https://www.mdpi.com/2411-5134/6/4/71/htm"
+      ],
+      "manufacturingProcesses": [
+        "3D Printing"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-P-2.0",
+      "oshwaUid": "CA000008",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 11,
+      "curationStatus": null,
+      "name": "ANAVI Gardening uHAT",
+      "producer": "ANAVI Technology",
+      "designer": "ANAVI Technology",
+      "purpose": "ANAVI Gardening uHAT is a low-cost, open source Raspberry Pi add-on board that helps develop smart solutions for monitoring and growing plants.",
+      "description": "ANAVI Gardening uHAT supports a couple capacitive soil moisture sensors, waterproof temperature sensor, I2C sensors for temperature, humidity, barometric pressure, and light. No soldering is required. Getting started is easy. You just plug it into a Raspberry Pi with your bare hands (no tools needed) and follow the steps from the user manual.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://anavi.technology/",
+      "urls": [
+        "https://anavi.technology/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "Other",
+      "oshwaUid": "BG000079",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 12,
+      "curationStatus": null,
+      "name": "LibreIncu",
+      "producer": "Altermundi",
+      "designer": "Altermundi",
+      "purpose": "Automated poultry incubator designed for family farming.",
+      "description": "LibreIncu is an open-source hardware and software automated poultry incubator designed specifically for family farming and the popular economy. Collaboratively developed by the technology cooperative AlterMundi and the rural organization Comunidad, Trabajo y Organización (CTO) in Córdoba, Argentina, the project aims to bridge technological and food sovereignty.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://libreincu.altermundi.net/",
+      "urls": [
+        "https://libreincu.altermundi.net/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "AR00005",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 13,
+      "curationStatus": null,
+      "name": "Baby Groot",
+      "producer": "Pepe Ruiz",
+      "designer": "Pepe Ruiz",
+      "purpose": "Agriculture-oriented electronic board for irrigation control.",
+      "description": "Arduino-based with expandable capabilities for homes and urban gardens.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/Sxyther/BabyGroot_v1-1/",
+      "urls": [
+        "https://github.com/Sxyther/BabyGroot_v1-1/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "MX000008",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 14,
+      "curationStatus": null,
+      "name": "SATARK",
+      "producer": "Sk Reezaal Arafat",
+      "designer": "Sk Reezaal Arafat",
+      "purpose": "Predictive climate defense matrix combining orbital intelligence.",
+      "description": "It utilizes SwinIR to upscale GEO satellite feeds for zero-blind-spot monitoring, and NDVI models to predict harvest windows—stopping fires before ignition. Ground-level IoT nodes detect chemical signatures to validate satellite data and calculate meteorological \"Smart Burning Windows,\" while Track 1 Field Guardians enforce sociological de-escalation.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://satark-dashboard.netlify.app",
+      "urls": [
+        "https://satark-dashboard.netlify.app"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-S-2.0",
+      "oshwaUid": "IN000084",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 15,
+      "curationStatus": null,
+      "name": "Little Green House",
+      "producer": "Michael DI ROCCO",
+      "designer": "Michael DI ROCCO",
+      "purpose": "Little Green House (LG) is an open-source indoor greenhouse controller.",
+      "description": "Automates watering, lighting, and humidity using sensors and a peristaltic pump.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/Mighty-Tronics/LittleGreenHouse/tree/main",
+      "urls": [
+        "https://github.com/Mighty-Tronics/LittleGreenHouse/tree/main"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-S-2.0",
+      "oshwaUid": "LU000001",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 16,
+      "curationStatus": null,
+      "name": "RootMaster",
+      "producer": "Micke Prag",
+      "designer": "Micke Prag",
+      "purpose": "Automated hydroponics controller for precise nutrient and climate control.",
+      "description": "Automated hydroponics controller for efficient plant growth.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://openhydroponics.com",
+      "urls": [
+        "https://openhydroponics.com"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-W-2.0",
+      "oshwaUid": "SE000029",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 17,
+      "curationStatus": null,
+      "name": "Vinduino soil moisture sensor station",
+      "producer": "Vinduino LLC",
+      "designer": "Reinier van der Lee",
+      "purpose": "Solar powered remote sensor platform for optimizing irrigation.",
+      "description": "Aimed at increasing crop yield and saving irrigation water.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.tindie.com/products/Reinier/vinduino-remote-sensor-station-board/",
+      "urls": [
+        "https://www.tindie.com/products/Reinier/vinduino-remote-sensor-station-board/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "Other",
+      "oshwaUid": "US000177",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 18,
+      "curationStatus": null,
+      "name": "IoT AgroIntelligence LoRaWAN Node",
+      "producer": "Antonio Valente",
+      "designer": "Antonio Valente",
+      "purpose": "LoRaWAN node with multiple ADC channels, I2C, and SDI-12 ports.",
+      "description": "Agricultural monitoring applications using CubeCell module.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/antoniovalente/IoT-AgroIntelligence-Node",
+      "urls": [
+        "https://github.com/antoniovalente/IoT-AgroIntelligence-Node"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "PT000001",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 19,
+      "curationStatus": null,
+      "name": "Electronic Limit Switch",
+      "producer": "Dilshan R Jayakody",
+      "designer": "Dilshan R Jayakody",
+      "purpose": "Fluid level control module for liquid management in tanks.",
+      "description": "Reliable and automated liquid management module.",
+      "category": "Food",
+      "subCategories": [
+        "Utility system"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/dilshan/electronic-limit-switch",
+      "urls": [
+        "https://github.com/dilshan/electronic-limit-switch"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-W-2.0",
+      "oshwaUid": "LK000017",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 20,
+      "curationStatus": null,
+      "name": "SparkFun Soil Moisture Sensor",
+      "producer": "SparkFun Electronics",
+      "designer": "SparkFun Electronics",
+      "purpose": "Simple breakout for measuring the moisture in soil.",
+      "description": "Breakout board that outputs an analog signal based on soil conductivity.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.sparkfun.com/",
+      "urls": [
+        "https://www.sparkfun.com/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": "7.95",
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": "US000017",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 21,
+      "curationStatus": null,
+      "name": "Open-Source spectral measurement platform for plant reflectance and material identification",
+      "producer": "Instituto Tecnológico Metropolitano",
+      "designer": "Mateo Mejia",
+      "purpose": "Low-cost spectral platform developed for reflectance analysis.",
+      "description": "t uses a Hamamatsu C12880MA spectrometer with dual illumination (LED and incandescent, 340–850 nm), controlled by a Teensy 3.1 via Python. The 3D-printed modular design ensures flexibility. Validation showed strong agreement with a commercial spectrometer, confirming suitability for research and education.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://osf.io/bvwkp",
+      "urls": [
+        "https://osf.io/bvwkp"
+      ],
+      "manufacturingProcesses": [
+        "3D Printing"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CC-BY-SA-4.0",
+      "oshwaUid": "CO000001",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 22,
+      "curationStatus": null,
+      "name": "PyLoGreen",
+      "producer": "Franco Alessandro Arenas Mamani",
+      "designer": "Franco Alessandro Arenas Mamani",
+      "purpose": "Monitoring of air temp, humidity, soil moisture, and pH.",
+      "description": "Hardware platform for continuous monitoring inside greenhouses.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://doi.org/10.17605/OSF.IO/APHCV",
+      "urls": [
+        "https://doi.org/10.17605/OSF.IO/APHCV"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": "PE000003",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 23,
+      "curationStatus": null,
+      "name": "Hyphascope",
+      "producer": "Holger Schaefer",
+      "designer": "Holger Schaefer",
+      "purpose": "Hyphascope is a low-cost high-resolution imaging device for hyphae in soil..",
+      "description": "The imaging device's design was adopted from a 3D printer, with a digital microscope camera replacing the lament extruder. The device yields soil profile images at an imaging resolution of up to 0.52 μm px-1 (49000 dpi) within an observable volume of 70 × 210 × 1.5 mm. Repeated imaging of a soil profile enables researchers to observe and quantify changes in the amount, distribution, and morphology of hyphae in soil.",
+      "category": "Food",
+      "subCategories": [
+        "Preparation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/h-schaefer/hyphascope",
+      "urls": [
+        "https://github.com/h-schaefer/hyphascope"
+      ],
+      "manufacturingProcesses": [
+        "3D Printing",
+        "Toolkit"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CC-BY-4.0",
+      "oshwaUid": "JP000021",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 24,
+      "curationStatus": null,
+      "name": "Weather Station",
+      "producer": "Makers Asylum Innovation Pvt. Ltd.",
+      "designer": "Aafayt,Afiya,Barkade Satyam,Sanjana Moorthi,Smruti Ranjan Behera",
+      "purpose": "ESP32-powered weather station.",
+      "description": "Measures temperature, humidity, pressure, wind, and rainfall.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.makersasylum.com/project/weather-station/",
+      "urls": [
+        "https://www.makersasylum.com/project/weather-station/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": "IN000087",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 25,
+      "curationStatus": null,
+      "name": "Hidro_IOT",
+      "producer": "Alison Requena",
+      "designer": "Alison Requena",
+      "purpose": "Monitoring factors specifically soil moisture and water flow.",
+      "description": "Ensure that plants receive optimal conditions for development.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/AlisonRequena/Hidro_IOT.git",
+      "urls": [
+        "https://github.com/AlisonRequena/Hidro_IOT.git"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "GT000017",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 26,
+      "curationStatus": null,
+      "name": "Colubris LoRa Meteorological Station Board",
+      "producer": "Julio Nunes Avelar",
+      "designer": "Julio Nunes Avelar",
+      "purpose": "Povides farmers with localized, real-time data on temperature, humidity, rainfall, and wind.",
+      "description": "Colubris is an open-source hardware board based on the ESP32-S2 microcontroller and equipped with an integrated SX1262 LoRa module. In addition, it has a battery management system that allows charging and use of batteries directly from the board. The main purpose of Colubris is to equip weather stations operating in remote areas, but it is versatile enough to be used in other devices requiring long-range communication.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://embarcacoes.ic.unicamp.br/colubris/",
+      "urls": [
+        "https://embarcacoes.ic.unicamp.br/colubris/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-W-2.0",
+      "oshwaUid": "BR000016",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 27,
+      "curationStatus": null,
+      "name": "EnviroDIY Mayfly Data Logger",
+      "producer": "Stroud Water Research Center",
+      "designer": "Stroud Water Research Center",
+      "purpose": "Open-source, Arduino-compatible datalogging board.",
+      "description": "Ideal for custom long-term monitoring like water quality.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.envirodiy.org/mayfly/",
+      "urls": [
+        "https://www.envirodiy.org/mayfly/"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-1.2",
+      "oshwaUid": "US002801",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 28,
+      "curationStatus": null,
+      "name": "RESTEP EMI FILTER",
+      "producer": "Christopher Arntzen",
+      "designer": "Christopher Arntzen",
+      "purpose": "EMI Filter for the 24V FarmBot vacuum pump.",
+      "description": "This EMI Filter is designed to mitigate WiFi signal degradation while the vacuum pump is operating.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.chris-arntzen.com/restep",
+      "urls": [
+        "https://www.chris-arntzen.com/restep"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "US001097",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 29,
+      "curationStatus": null,
+      "name": "Alternating Latching Relay - ALR",
+      "producer": "TSAI, AN-HSIANG",
+      "designer": "TSAI, AN-HSIANG",
+      "purpose": "Irrigation systems, ventilation equipment alternating control, water circulation and zone equipment.",
+      "description": "A latching relay circuit design using pure mechanical relays and a single contact switch to achieve toggle and holding functionality. This design provides a cost-effective solution for bistable switching applications without requiring electronic components. Key Features: - Pure relay-based design (no semiconductors) - Single-contact toggle switch operation - Self-holding circuit configuration - Simple and reliable mechanical switching",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/WarnerCharon/Alternating-Latching-Relay---ALR",
+      "urls": [
+        "https://github.com/WarnerCharon/Alternating-Latching-Relay---ALR"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-S-2.0",
+      "oshwaUid": "TW000008",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 30,
+      "curationStatus": null,
+      "name": "SparkPNT RTK Facet mosaic L-Band",
+      "producer": "SparkFun Electronics",
+      "designer": "SparkFun Electronics",
+      "purpose": "Provides centimeter-accurate GPS positioning for precision tasks like auto-steering, field mapping, and variable-rate application",
+      "description": "The RTK Facet mosaic L-Band brings the power of Septentrio's mosaic-X5 module to the versatility of the Facet form factor, complete with L-band capabilities for seamless mobile surveying.",
+      "category": "Food",
+      "subCategories": [
+        "Preparation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.sparkfun.com/sparkpnt-rtk-facet-mosaic-l-band.html",
+      "urls": [
+        "https://www.sparkfun.com/sparkpnt-rtk-facet-mosaic-l-band.html"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CC-BY-SA-4.0",
+      "oshwaUid": "US002723",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 31,
+      "curationStatus": null,
+      "name": "Open-Source Vertical Swinging Wood-Based Solar Photovoltaic Racking Systems",
+      "producer": "Nicholas Vandewetering",
+      "designer": "Nicholas Vandewetering",
+      "purpose": "It offers the opportunity for large-scale agrivoltaics to be employed at farms producing field crops with conventional farming equipment.",
+      "description": "Unfortunately, commercial proprietary vertical racks cost more than all types of conventional PV farm racking solutions. To overcome these cost barriers, this study reports on the development of a new wood-based PV racking design. The open-source design consists of a hinge mechanism, which reduces mechanical loading and enables wood to be used as the main structural material, and is the first of its kind. This open-source vertical wood-based PV rack is (i) constructed from locally accessible (domestic) renewable and sustainable materials, (ii) able to be made with hand tools by the average farmer on site, (iii) possesses a 25-year lifetime to match PV warranties, and (iv) is structurally sound, following Canadian building codes to weather high wind speeds and heavy snow loads. The results showed that the capital cost of the racking system is less expensive than the commercial equivalent and all of the previous wood-based rack designs, at a single unit retail cost of CAD 0.21. The racking LCOE is 77% of the cost of an equivalent commercial racking system using retail small-scale component costs, and is 22%, 34%, and 38% less expensive than commercial metal vertical racking, wood fixed tilt racking, and wood seasonal tilt racking costs, respectively. Overall, wooden vertical swinging PV racking provides users with a low-cost, highly available alternative to conventional metal vertical racking, along with a potential increase in energy yield in high wind areas thanks to its unique swinging mechanism.",
+      "category": "Food",
+      "subCategories": [
+        "Utility system"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://www.mdpi.com/2411-9660/7/2/34",
+      "urls": [
+        "https://www.mdpi.com/2411-9660/7/2/34"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-S-2.0",
+      "oshwaUid": "CA000025",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 32,
+      "curationStatus": null,
+      "name": "TempGuard - Analog DC Temperature Control Module",
+      "producer": "TSAI, AN-HSIANG",
+      "designer": "TSAI, AN-HSIANG",
+      "purpose": "Maintains precise temperature control for food storage or processing to preserve quality and safety",
+      "description": "TempGuard is an industrial-grade, pure analog DC temperature control module designed for auxiliary temperature regulation. It operates without microcontrollers or firmware, ensuring zero risk of system crashes.",
+      "category": "Food",
+      "subCategories": [
+        "Storage"
+      ],
+      "valueChainStages": [
+        "Post-Harvest"
+      ],
+      "sourceLinkText": "https://github.com/WarnerCharon/TempGuard---Analog-DC-Temperature-Control-Module",
+      "urls": [
+        "https://github.com/WarnerCharon/TempGuard---Analog-DC-Temperature-Control-Module"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-S-2.0",
+      "oshwaUid": "TW000009",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 33,
+      "curationStatus": null,
+      "name": "Load-cell ampfilier HX711 board",
+      "producer": "SOLDERED ELECTRONICS LTD",
+      "designer": "SOLDERED ELECTRONICS LTD",
+      "purpose": "Converts weight sensor signals for accurate portioning or packaging in food processing lines.",
+      "description": "The HX711 breakout allows you to easily read the weight value from a load-cell sensor (mass sensor). This small ADC is of great precision and is capable of measuring very small changes in the load-cell resistance, whose signals are amplified with the built-in amplifier. Subsequently, this same information is digitally transmitted to a microcontroller that simply converts the numbers obtained into the actual weight.",
+      "category": "Food",
+      "subCategories": [
+        "Packaging"
+      ],
+      "valueChainStages": [
+        "Packaging"
+      ],
+      "sourceLinkText": "https://solde.red/333005",
+      "urls": [
+        "https://solde.red/333005"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "TAPR",
+      "oshwaUid": "HR000017",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 34,
+      "curationStatus": null,
+      "name": "Creator Transfer Chamber",
+      "producer": "Creator, Inc.",
+      "designer": null,
+      "purpose": "To create a transfer chamber that protects the inside of a restaurant from outside air yet still allows to transport completed meals out to delivery customers",
+      "description": "A transfer chamber that uses a positive pressure system combined with a self-sanitizing conveyor to protect staff and guests while transporting hermetically sealed meals",
+      "category": "Food",
+      "subCategories": [
+        "Packaging"
+      ],
+      "valueChainStages": [
+        "Retail/Food Service"
+      ],
+      "sourceLinkText": "https://github.com/creatoreng/Creator-Transfer-Chamber",
+      "urls": [
+        "https://github.com/creatoreng/Creator-Transfer-Chamber"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "US000235",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 35,
+      "curationStatus": null,
+      "name": "BioSamplr",
+      "producer": null,
+      "designer": "John P. Efromson,Shuai Li,  Michael D. Lynch",
+      "purpose": "Bioreactor which can be used for farmentation",
+      "description": null,
+      "category": "Food",
+      "subCategories": [
+        "Fermentation/Bioprocessing"
+      ],
+      "valueChainStages": [
+        "Processing"
+      ],
+      "sourceLinkText": "https://www.hardware-x.com/article/S2468-0672(21)00006-7/fulltext",
+      "urls": [
+        "https://www.hardware-x.com/article/S2468-0672(21)00006-7/fulltext"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": "$700",
+      "tariffCode": null,
+      "hardwareLicense": "Attribution-ShareAlike 4.0",
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 36,
+      "curationStatus": null,
+      "name": "A Low-Cost Monitoring System and Operating Database for Quality Control in Small Food Processing Industry",
+      "producer": "DICCA–Department of Civil, Chemical and Environmental Engineering, Università di Genova",
+      "designer": "Ombretta Paladino,Francesca Fissore,Matteo Neviani",
+      "purpose": null,
+      "description": "The use of completely automated systems for collecting sensor data with the aim of monitoring and controlling the quality of small-scale food processes is not widespread. Small and micro-enterprises usually do not carry out their own precompetitive research or prototype development as regards to automation technologies. This study proposes a web-based, low-cost monitoring and supervisory control and data acquisition (SCADA) system whose kernel is available for free, as a possible solution that could be adopted by these food producers. It is mainly based on open SW/HW so as its configuration is adaptable to the application and type of plant. It presents a modular architecture and its main functionalities encompass the acquisition, management, aggregation and visualization of process data, providing an operating database. It also provides food tracking and process quality control: The time series are browsable due to QR-Code generation and different early warning detection strategies are implemented. A tool for solving migration problems based on Fick’s equation is offered as a packaging decision support system.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Processing"
+      ],
+      "sourceLinkText": "https://www.mdpi.com/2224-2708/8/4/52?utm_source=researchgate.net&utm_medium=article",
+      "urls": [
+        "https://www.mdpi.com/2224-2708/8/4/52?utm_source=researchgate.net&utm_medium=article"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": "$144.96",
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 37,
+      "curationStatus": null,
+      "name": "MACARONS: A Modular and Open-Sourced Automation System for Vertical Farming",
+      "producer": null,
+      "designer": "Vijja Wichitwechkarn, Charles Fox",
+      "purpose": "It's an open hardware system  plant transport in automated horticulture systems such as vertical farms",
+      "description": null,
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://arxiv.org/abs/2210.04975",
+      "urls": [
+        "https://arxiv.org/abs/2210.04975"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 38,
+      "curationStatus": null,
+      "name": "FarmCorder: Crop nutrition deficiency sensor",
+      "producer": "Vignesh Ravichandran",
+      "designer": null,
+      "purpose": "The farmer would periodically go around the feild and sample various leafs of the crop, All this data is stored with a time&location stamp from the GPS device.",
+      "description": "This makes it possible for multiple farmers to share the same device using geofencing of their farm land. The measurements are to be taken twice a week.\n\nThe data goes to a cloud server where the data is compared with a nominal database for the same crop varitey along with the date from sowing. The divergence in leaf chlorophyll is extracted from the mean statistic and thus using a detailed fertilizer application plan is obtained and this along with a local weather reported is provided to the farmer using Interative Voice Response (IVRS) on his normal phone in the farmer's local language. The farmer would thus be able to correct any crop nutrition problems in the start.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/25155-farmcorder-crop-nutrition-deficiency-sensor",
+      "urls": [
+        "https://hackaday.io/project/25155-farmcorder-crop-nutrition-deficiency-sensor"
+      ],
+      "manufacturingProcesses": [
+        "Toolkit"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 39,
+      "curationStatus": null,
+      "name": "FarmBot - Open-Source CNC Farming",
+      "producer": "Rory Aronson",
+      "designer": "Rory Aronson,Rick Carlino,Tim Evers",
+      "purpose": "FarmBot is an open-source CNC farming machine and software package built for small scale, hyper local, DIY food production.",
+      "description": null,
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/2552-farmbot-open-source-cnc-farming",
+      "urls": [
+        "https://hackaday.io/project/2552-farmbot-open-source-cnc-farming"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 40,
+      "curationStatus": null,
+      "name": "SunLeaf",
+      "producer": "AVR",
+      "designer": null,
+      "purpose": "A solar powered wireless picopower sensor module with cloud Datalogging and control geared towards agriculture and environmental monitoring",
+      "description": "The SunLeaf is a wireless sensor module for remote sensing applications. The module is solar/battery powered, low power, connected via WiFi, low cost, and highly scalable. SunLeaf interfaces with several variety sensors, samples, and transmits the data to the cloud. Data is viewed through a web interface. The SunLeaf module intends to be a solution for many remote wireless sensing applications, such as plant health, agriculture, monitoring pollution, and monitoring climate.",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/10457-sunleaf",
+      "urls": [
+        "https://hackaday.io/project/10457-sunleaf"
+      ],
+      "manufacturingProcesses": [
+        "Toolkit"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 41,
+      "curationStatus": null,
+      "name": "Smart Hydroponic GreenHouse",
+      "producer": "Tom Van den Bon",
+      "designer": "Tom Van den Bon",
+      "purpose": "A Hydroponic/Greenhouse system that has been automated as much as possible to remove the maintenance burden of these systems from the user.",
+      "description": "Hydroponic and Greenhouse Systems have been proven to be a great way of growing fresh produce. Especially in areas where space or environment is unsuitable. This project is my attempt to create a smart desktop greenhouse system that requires minimal maintenance (after initial setup) from the user by automating various tasks, but still keep the user updated to the status of their plants (via mobile app/notifications). It's a great opportunity to mix gardening and technology.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/4671-smart-hydroponic-greenhouse",
+      "urls": [
+        "https://hackaday.io/project/4671-smart-hydroponic-greenhouse"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 42,
+      "curationStatus": null,
+      "name": "https://hackaday.io/project/6324-urban-kitchen-garden",
+      "producer": "Eric Wiiliam",
+      "designer": null,
+      "purpose": "Open Source Arduino controlled counter-top garden for growing vegetables, herbs, or greens for sustainable foods right in your own home.",
+      "description": null,
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/6324-urban-kitchen-garden",
+      "urls": [
+        "https://hackaday.io/project/6324-urban-kitchen-garden"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 43,
+      "curationStatus": null,
+      "name": "MorGon: Internet Of Things makes my food",
+      "producer": "starkus92",
+      "designer": "Jima Jimenez,starkus92",
+      "purpose": "The MorGon system is the first prototype designed to growth your own food at home without losing neither proteins nor space.",
+      "description": null,
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/11018-morgon-internet-of-things-makes-my-food",
+      "urls": [
+        "https://hackaday.io/project/11018-morgon-internet-of-things-makes-my-food"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 44,
+      "curationStatus": null,
+      "name": "Project EDEN",
+      "producer": "sadhana",
+      "designer": "sadhana",
+      "purpose": "Project EDEN is an open initiative to grow crops quickly, under near-optimal conditions with automated aeroponics habitats.",
+      "description": "EDEN will use a large array of horticultural LEDs in conjunction with the CO2 system. Horticultural LEDs emit Photosynthetically Active Radiation (PAR) which uses less electricity by focusing on the spectrum of light plants actually use for photosynthesis. This saves electricity by not powering colors of light that plants don't absorb much of through photosynthesis.",
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/6148-project-eden",
+      "urls": [
+        "https://hackaday.io/project/6148-project-eden"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 45,
+      "curationStatus": null,
+      "name": "Automatic Food Slicer Robot",
+      "producer": "Erin RobotZwrrl",
+      "designer": "Erin RobotZwrrl",
+      "purpose": "Accessibility robot, bringing confidence and safety to those who have difficulties cutting food",
+      "description": "The Automatic Food Slicer will be able to slice food for those who are unable to due to nerve damage, disease, or disability. It is an accessibility robot designed with a similar ease-of-use as a microwave. By being able to simply control a robot to slice food, it is one less challenge for people to worry about. It will bring confidence to the user as they do not need to ask for help for a minute task.We are working on a \"swipe to slice\" feature so they can move their finger over the photo of the food on an iPad, and the robot will cut the food. The food will be tracked using augmented reality markers in relation to the robot.The app will also provide meal recommendations based on the food being sliced. As well as view your sliced food history, and social sharing.",
+      "category": "Food",
+      "subCategories": [
+        "Preparation"
+      ],
+      "valueChainStages": [
+        "Processing"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/1393-automatic-food-slicer-robot",
+      "urls": [
+        "https://hackaday.io/project/1393-automatic-food-slicer-robot"
+      ],
+      "manufacturingProcesses": [
+        "Toolkit"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 46,
+      "curationStatus": null,
+      "name": "Garden of Eden Watering Kit",
+      "producer": "Atheros",
+      "designer": null,
+      "purpose": "The goal of this project is to build a device that will watering of my plants while one is away",
+      "description": null,
+      "category": "Food",
+      "subCategories": [
+        "Control and Automation"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://hackaday.io/project/13067-garden-of-eden-watering-kit",
+      "urls": [
+        "https://hackaday.io/project/13067-garden-of-eden-watering-kit"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 47,
+      "curationStatus": null,
+      "name": "Innocell Bioreactor",
+      "producer": null,
+      "designer": "Nitzan Cohen ,Emma Sicher ,Camilo Ayala-Garcia,Ignacio Merino Sanchez-Fayos,Secil Ugur Yavuz ,Lorenza Conterno",
+      "purpose": "Create sustainable, bio-based packaging materials from bacterial cellulose",
+      "description": "A growing number of science and design scholars and design practitioners have recently embarked on studying fermentation processes to produce alternative materials. The main driver of this trend is the search for a sustainable future by proposing novel alternatives that could substitute or integrate into society’s current production and consumption models. This study presents the development of an open-source bioreactor capable of enhancing and optimizing a symbiotic culture of bacteria and yeast (SCOBY) production process. The bioreactor is part of a greater design-driven project aiming to process edible and non-edible materials. The study presents the experiments and methods that led to the development and refinement of the current bioreactor, and all the information needed to replicate it with tools and equipment currently available under the Creative Commons status. The aim of sharing open-source methods and results to reproduce the bioreactor is to support different interdisciplinary teams of scientists and designers in generating high amounts of SCOBY, accelerating R&D with this auspicious yet underexplored source of bacterial cellulose.",
+      "category": "Food",
+      "subCategories": [
+        "Packaging"
+      ],
+      "valueChainStages": [
+        "Logistics"
+      ],
+      "sourceLinkText": "https://www.mdpi.com/2311-5637/9/10/915/xml",
+      "urls": [
+        "https://www.mdpi.com/2311-5637/9/10/915/xml"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 48,
+      "curationStatus": null,
+      "name": "Battery-free, stretchable, and autonomous smart packaging",
+      "producer": "Ali Douaki, Mukhtar Ahmed, Edoardo Longo, Giulia Windisch, Raheel Riaz, Sarwar Inam, Thi Nga Tran, Evie L. Papadopoulou, Athanassia Athanassiou, Emanuele Boselli, Luisa Petti, Paolo Lugli",
+      "designer": null,
+      "purpose": "Extend shelf life and reduce food waste through active, real-time monitoring",
+      "description": "In the food industry, innovative packaging solutions are increasingly important for reducing food waste and for contributing to global sustainability efforts. However, current food packaging is generally passive and unable to adapt to changes in the food environment in real-time. To address this, we have developed a battery-less and autonomous smart packaging system that wirelessly powers closed-loop sensing and release of active compounds. This system integrates a gas sensor for real-time food monitoring, a Near-Field Communication (NFC) antenna, and a controlled release of active compounds to prevent quality deterioration in the complex food environment. We have demonstrated the ability of the developed smart packaging system, to continuously monitor the freshness of fish products and to trigger the release of active compounds when the food starts to spoil. The system was able to extend the shelf-life of the food product up to 14 days, due to the controlled release of antioxidant and antibacterial compounds. Our system could pave the way towards an Internet of Things solution that addresses protection, active prevention of food spoilage and sustainability, facing all the current challenges of the food packaging industry.",
+      "category": "Food",
+      "subCategories": [
+        "Packaging"
+      ],
+      "valueChainStages": [
+        "Logistics"
+      ],
+      "sourceLinkText": "https://arxiv.org/abs/2501.14764",
+      "urls": [
+        "https://arxiv.org/abs/2501.14764"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 49,
+      "curationStatus": null,
+      "name": "Method Personal Food Computer – Physical Build",
+      "producer": "David Mayman",
+      "designer": "David Mayman",
+      "purpose": "Grow food in a controlled environment, which can then be packaged and tracked.",
+      "description": null,
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://github.com/Method-Inc-OLD/method-pfc_physical-build/blob/master/README.md",
+      "urls": [
+        "https://github.com/Method-Inc-OLD/method-pfc_physical-build/blob/master/README.md"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 50,
+      "curationStatus": null,
+      "name": "SmartBin+",
+      "producer": "brunomaks",
+      "designer": null,
+      "purpose": "An intelligent waste monitor for restaurants.",
+      "description": "SmartBin+ is an intelligent waste monitor and control system designed to optimize waste management in fast food restaurants. Reliable container fullness and humidity monitor, configurable location, prompt notification feature and fire detection capabilities: all-in-one!Introducing SmartBin+: Revolutionizing Waste Management in Fast Food RestaurantsIn the fast-paced world of restaurant operations, efficient waste management is essential. That's where SmartBin+ comes in. It's an intelligent waste monitor and control system designed specifically for fast food establishments.SmartBin+ combines precise sensors with a sophisticated desktop application to optimize waste management processes. With real-time data on container fullness and humidity levels, restaurant managers can make informed decisions about waste disposal. Our system offers configurable location settings and prompt notifications, ensuring proactive management and reducing the risk of oversights.But that's not all. SmartBin+ goes beyond basic monitoring. It enhances restaurant service with display status indicators and LED lights, benefiting both staff and customers. And with built-in fire detection capabilities, safety is always a priority.In summary, SmartBin+ transforms waste management in fast food restaurants, offering a data-driven approach that streamlines operations and ensures compliance with safety standards. Are you ready to revolutionize your restaurant's waste management?",
+      "category": "Food",
+      "subCategories": [
+        "Food Waste handling"
+      ],
+      "valueChainStages": [
+        "Retail/Food Service"
+      ],
+      "sourceLinkText": "https://github.com/brunomaks/smartBin",
+      "urls": [
+        "https://github.com/brunomaks/smartBin"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 51,
+      "curationStatus": null,
+      "name": "Smart-Fridge-Capstone",
+      "producer": "Harnish-Patel",
+      "designer": null,
+      "purpose": "The Smart Fridge Module is a cost-effective and modular solution designed to address the environmental impact of food waste.",
+      "description": "With a focus on reducing forgotten food spoilage, the module employs a Raspberry Pi with a PiCamera for object detection, coupled with a mobile app for user interaction.",
+      "category": "Food",
+      "subCategories": [
+        "Food Waste handling"
+      ],
+      "valueChainStages": [
+        "Retail/Food Service"
+      ],
+      "sourceLinkText": "https://github.com/harnish-patel/Smart-Fridge-Capstone",
+      "urls": [
+        "https://github.com/harnish-patel/Smart-Fridge-Capstone"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 52,
+      "curationStatus": null,
+      "name": "UV-Sanitizing Autonomous Robot",
+      "producer": "Guillermo Perez Guillen",
+      "designer": null,
+      "purpose": null,
+      "description": "Ultraviolet germicidal irradiation (UVGI) is a disinfection method that uses short-wavelength ultraviolet (ultraviolet C or UV-C) light to kill or inactivate microorganisms by destroying nucleic acids and disrupting their DNA, leaving them unable to perform vital cellular functions. UVGI is used in a variety of applications, such as food, air, and water purification. The effectiveness of germicidal UV depends on the length of time a microorganism is exposed to UV, the intensity and wavelength of the UV radiation, the presence of particles that can protect the microorganisms from UV, and a microorganism's ability to withstand UV during its exposure.",
+      "category": "Food",
+      "subCategories": [
+        "Cleaning Equipment"
+      ],
+      "valueChainStages": [
+        "Retail/Food Service"
+      ],
+      "sourceLinkText": "https://www.hackster.io/guillengap/uv-sanitizing-autonomous-robot-61c8ae?trk=article-ssr-frontend-pulse_little-text-block",
+      "urls": [
+        "https://www.hackster.io/guillengap/uv-sanitizing-autonomous-robot-61c8ae?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "manufacturingProcesses": [
+        "Toolkit"
+      ],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 53,
+      "curationStatus": null,
+      "name": "GROUU - An Open Precision Agriculture Modular System",
+      "producer": null,
+      "designer": null,
+      "purpose": "It is a Precision Agriculture sensor network and an Irrigation and fertilization system but also a knowledge transfer system,",
+      "description": "GROUU is about designing and prototyping a medium for Open Agriculture. It is a Precision Agriculture sensor network and an Irrigation and fertilization system but also a knowledge transfer platform, connecting both systems and humans. It follows a modular Object Oriented Hardware approach where “(...) software objects and hardware objects are peers that have procedures, methods, ports, and presentations. Machine building modules are available as software libraries are to programmers.” (Peek 2016).",
+      "category": "Food",
+      "subCategories": [
+        "Quality Control"
+      ],
+      "valueChainStages": [
+        "Farming"
+      ],
+      "sourceLinkText": "https://fabacademy.org/2018/labs/fablabfct/students/andre-rocha/prj.html",
+      "urls": [
+        "https://fabacademy.org/2018/labs/fablabfct/students/andre-rocha/prj.html"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    }
+  ]
+}
