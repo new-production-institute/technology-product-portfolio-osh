@@ -13,9 +13,15 @@ The portfolio documents candidate technologies by purpose, category, source, des
 ## License
 
 ## Authors
-- Victoria Wenzelmann
-- Enrico Bassi
-- J.C. Mariscal-Melgar
+
+- Victoria Wenzelmann (Data Curation, Front-end)
+- Enrico Bassi (Data Curation)
+- J.C. Mariscal-Melgar (Data Curation, Backend)
+
+## Contributors
+
+- Mohammad Mohammadifar (Food and Construction data curation)
 
 ## Acknowledgement
+
 The project "Fab City – Decentralized Digital Production for Urban Value Creation" is funded by dtec.bw and supported by the European Union – NextGenerationEU.
