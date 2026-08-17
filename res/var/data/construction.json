@@ -1,0 +1,473 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": {
+    "workbook": "res/var/data/technology-product-portfolio.ods",
+    "sheet": "Construction",
+    "sha256": "1b603d6e443de704236d25962cc82c0a17c6bae52e5156575b4e269be780e01b"
+  },
+  "records": [
+    {
+      "sourceRow": 4,
+      "curationStatus": null,
+      "name": "SparkFun RTK Express",
+      "producer": "SparkFun Electronics",
+      "designer": "SparkFun Electronics",
+      "purpose": "The SparkFun RTK Express is an easy to use GNSS receiver for centimeter-level positioning.",
+      "description": "The SparkFun RTK Express is an easy to use GNSS receiver for centimeter-level positioning. Perfect for surveying, logging, and all types of post processing, this preprogrammed device can also be used for autonomous driving, navigation, asset tracking and any other application where there is a clear view of the sky. The RTK Express can also be used as a base station. With the press of a button, two RTK Expresses can be used to create an RTK system capable of 14mm horizontal positional accuracy.",
+      "category": "Construction",
+      "subCategories": [
+        "Surveying and Layout"
+      ],
+      "valueChainStages": [
+        "Site Investigation"
+      ],
+      "sourceLinkText": "https://www.sparkfun.com/sparkfun-rtk-express.html",
+      "urls": [
+        "https://www.sparkfun.com/sparkfun-rtk-express.html"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": "534.95 USD",
+      "tariffCode": null,
+      "hardwareLicense": "CERN",
+      "oshwaUid": "US002231",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 5,
+      "curationStatus": null,
+      "name": "Universal Aircrete Mixer",
+      "producer": "MIchael OLeary",
+      "designer": "MIchael OLeary",
+      "purpose": "The Universal Aircrete Mixer is designed to improve access to small-scale non autoclaved aerated concrete (NAAC) production.",
+      "description": "It's design allows for 2 people to load/unload the machine from a pickup truck bed without lifting gear, part by modular part. No part weighs more than 150 pounds. BOM cost is less than $5,000 depending on the area where materials are sourced. Similar equipment costs $50,000+. Key features are lighter steel used in construction and an integrated transfer pump.",
+      "category": "Construction",
+      "subCategories": [
+        "Utility and Support Systems"
+      ],
+      "valueChainStages": [
+        "Foundations and Structure"
+      ],
+      "sourceLinkText": "https://github.com/OpenSourceAircrete/UNIVERSAL-AIRCRETE-MIXER",
+      "urls": [
+        "https://github.com/OpenSourceAircrete/UNIVERSAL-AIRCRETE-MIXER"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-P-2.0",
+      "oshwaUid": "US002785",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 6,
+      "curationStatus": null,
+      "name": "Electronic Limit Switch",
+      "producer": "Dilshan R Jayakody",
+      "designer": "Dilshan R Jayakody",
+      "purpose": "A fluid level control module designed for reliable and automated liquid management in tanks.",
+      "description": null,
+      "category": "Construction",
+      "subCategories": [
+        "Utility and Support Systems"
+      ],
+      "valueChainStages": [],
+      "sourceLinkText": "https://github.com/dilshan/electronic-limit-switch",
+      "urls": [
+        "https://github.com/dilshan/electronic-limit-switch"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-W-2.0",
+      "oshwaUid": "LK000017",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 7,
+      "curationStatus": null,
+      "name": "LifeTrac Construction Set",
+      "producer": "Open Source Ecology",
+      "designer": "Marcin Jakubowski",
+      "purpose": "LifeTrac Construction Set as a modular open-source “construction kit” for building heavy machines",
+      "description": null,
+      "category": "Construction",
+      "subCategories": [
+        "Lifting and Material Handling"
+      ],
+      "valueChainStages": [
+        "Building Construction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/index.php?title=LifeTrac_Construction_Set&direction=prev&oldid=292488&printable=yes",
+      "urls": [
+        "https://wiki.opensourceecology.org/index.php?title=LifeTrac_Construction_Set&direction=prev&oldid=292488&printable=yes"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 8,
+      "curationStatus": null,
+      "name": "Modular Interconnecting Formwork System",
+      "producer": "Mortar Art",
+      "designer": "Mortar Art",
+      "purpose": "MIFS is starting out as an attempt to make tooling for an interconnecting brick, based on Precious Plastic's design, that can be used as formwork in construction.",
+      "description": "MIFS is starting out as an attempt to make tooling for an interconnecting brick, based on Precious Plastic's design, that can be used as formwork in construction. Once the brick is demonstrated as a viable building block for formwork, a library of other, connecting forms will be added, to enable a wider variety of geometries to be built.",
+      "category": "Construction",
+      "subCategories": [
+        "Concrete and Masonry"
+      ],
+      "valueChainStages": [
+        "Building Construction"
+      ],
+      "sourceLinkText": "https://www.thingiverse.com/thing:5467974",
+      "urls": [
+        "https://www.thingiverse.com/thing:5467974"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CC-BY-SA-4.0",
+      "oshwaUid": "AU000014",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 9,
+      "curationStatus": null,
+      "name": "Power Cube",
+      "producer": "Open Source Ecology",
+      "designer": "Marcin Jakubowski",
+      "purpose": "It is designed to function as a modular and interchangeable power supply for Global Village Construction Set (GVCS) technologies.",
+      "description": "The Power Cube is a modular, universal, self-contained power unit consisting of an engine coupled to a hydraulic pump, providing power from hydraulic fluid at high pressure through quick connect hoses.",
+      "category": "Construction",
+      "subCategories": [
+        "Utility and Support Systems"
+      ],
+      "valueChainStages": [
+        "Operation and Maintenance"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Power_Cube",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Power_Cube"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 10,
+      "curationStatus": null,
+      "name": "Wind Turbine",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "The Wind Turbine is a machine that converts mechanical kinetic energy of the wind into electrical energy. As a part of the GVCS it enables the generation of clean, renewable power.",
+      "description": "Small wind turbines are currently the main class being considered as a community-scale solution for power. These turbines may be as small as a fifty watt generator for boat, caravan, or miniature refrigeration unit. Small units often have direct drive generators, direct current output, aeroelastic blades, lifetime bearings and use a vane to point into the wind.",
+      "category": "Construction",
+      "subCategories": [
+        "Utility and Support Systems"
+      ],
+      "valueChainStages": [
+        "Operation and Maintenance"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Wind_Turbine",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Wind_Turbine"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 11,
+      "curationStatus": null,
+      "name": "Seed Eco-Home",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "The Seed Eco-Home 4 is a modular, production-grade house to make affordable, ecological housing widely accessible.",
+      "description": "It is Built from standardized, interoperable modules, it enables rapid construction, parallel workflows, and straightforward customization. The home includes a 6 kW photovoltaic system as a core feature. It is engineered for durability, ease of maintenance, and adaptability over time. It is designed as a small, expandable home - which can grow with the user's needs.",
+      "category": "Construction",
+      "subCategories": [
+        "Fabrication and Assembly"
+      ],
+      "valueChainStages": [
+        "Building Construction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Seed_Eco-Home_4",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Seed_Eco-Home_4"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": "CERN-OHL-S-2.0",
+      "oshwaUid": "US002825",
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 12,
+      "curationStatus": null,
+      "name": "CEB Press",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "automatic, high throughput Compressed Earth Brick Press",
+      "description": "It is named The Liberator because it is intended to free people from the single highest cost of living - housing. See Cost of Living.The CEB is at product release status and is being actively manufactured at Factor e Farm. The presses was used heavily as a part of the Factor e Farm Infrastructure Buildout 2011.",
+      "category": "Construction",
+      "subCategories": [
+        "Concrete and Masonry"
+      ],
+      "valueChainStages": [
+        "Foundations and Structure",
+        "Building Construction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/CEB_Press",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/CEB_Press"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": "$10k",
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 13,
+      "curationStatus": null,
+      "name": "Soil Mixer",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "The Soil Mixer is designed to homogeneously blend raw soil with a stabilizer (typically cement or lime) to create a consistent, high-quality building material.",
+      "description": null,
+      "category": "Construction",
+      "subCategories": [
+        "Concrete and Masonry"
+      ],
+      "valueChainStages": [
+        "Foundations and Structure"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Soil_Mixer",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Soil_Mixer"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": "<$1500",
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 14,
+      "curationStatus": null,
+      "name": "Cement Mixer",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "A Cement Mixer (also commonly named a concrete mixer) is a device that homogeneously combines cement, aggregate such as sand or gravel, and water to form concrete.",
+      "description": "A concrete mixer (also commonly called a cement mixer) is a device used to automate the preparation of cement by mixing it with other aggregates such as sand or gravel and water to form concrete. A typical concrete mixer uses a revolving drum in which the components are automatically mixed. The resulting mix is used as on of the most important elements on construction.",
+      "category": "Construction",
+      "subCategories": [
+        "Concrete and Masonry"
+      ],
+      "valueChainStages": [
+        "Foundations and Structure",
+        "Building Construction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Cement_Mixer",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Cement_Mixer"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 15,
+      "curationStatus": null,
+      "name": "Industrial Robot",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "The industrial robot is an automated machine that perform a wide variety of functions, (including welding, assembly, and CAM, etc...), all depending on which tools its hand is equipped with.",
+      "description": null,
+      "category": "Construction",
+      "subCategories": [
+        "Fabrication and Assembly"
+      ],
+      "valueChainStages": [
+        "Foundations and Structure"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Industrial_Robot",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Industrial_Robot"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 16,
+      "curationStatus": null,
+      "name": "Sawmill",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "A sawmill converts felled logs from trees into green wood lumber. As a piece of the GVCS, it unlocks a range of well-established wood construction techniques.",
+      "description": null,
+      "category": "Construction",
+      "subCategories": [
+        "Fabrication and Assembly",
+        "Cutting, Drilling, and Fastening"
+      ],
+      "valueChainStages": [
+        "Preconstruction",
+        "Building Construction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Sawmill",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Sawmill"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 17,
+      "curationStatus": null,
+      "name": "CNC Torch Table",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "This machine enables creation of custom parts for fabrication or replacement of broken components.",
+      "description": "The CNC Torch Table (aka RepTab) is an enabling machine for any workshop. This machine enables creation of custom parts for fabrication or replacement of broken components. The CNC Torch/Plasma Table development is rebooting and building on some of the later versions, but starting with the replication of Koruza's Good Enough CNC Plasma Table. One the integrated designs is to go towards gas versus plasma, because of the dependencies of a plasma cutter and other devices that have not been fully open source. As well as the availability of gas production being a valuable option. The Version 3 iteration expects to build, source, and improve designs toward a 100% open source project and parts. The power supply, height controller, torch, and plasma cutter are items needing to be developed. In progress, the need for on-demand materials and supplies can be met with a functional and accurate CNC Torch/Plasma Table that will reduce manufacturing time and increase capacity. The Koruza Project does not a have table, therefore, building on previous versions maybe a possibility.",
+      "category": "Construction",
+      "subCategories": [
+        "Fabrication and Assembly",
+        "Cutting, Drilling, and Fastening"
+      ],
+      "valueChainStages": [
+        "Preconstruction",
+        "Foundations and Structure"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/CNC_Torch_Table",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/CNC_Torch_Table"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 18,
+      "curationStatus": null,
+      "name": "Ironworker",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "Ironworker machines can shear, punch holes and notch in steel plates",
+      "description": "An Ironworker is a fundamental machine for working with many and is the backbone of many fabrication workshops. It generates tremendous force using hydraulic systems and mechanical leverage.",
+      "category": "Construction",
+      "subCategories": [
+        "Cutting, Drilling, and Fastening"
+      ],
+      "valueChainStages": [
+        "Preconstruction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Ironworker_Machine",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Ironworker_Machine"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 19,
+      "curationStatus": null,
+      "name": "Drill Press",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "A drill press (also known as pedestal drill, pillar drill, or bench drill) is a fixed style of drill that may be mounted on a stand or bolted to the floor or workbench.",
+      "description": "A drill press consists of a base, column (or pillar), table, spindle (or quill), and drill head, usually driven by an induction motor. The head has a set of handles (usually 3) radiating from a central hub that, when turned, move the spindle and chuck vertically, parallel to the axis of the column. The table can be adjusted vertically and is generally moved by a rack and pinion; however, some older models rely on the operator to lift and reclamp the table in position. The table may also be offset from the spindle's axis and in some cases rotated to a position perpendicular to the column.",
+      "category": "Construction",
+      "subCategories": [
+        "Cutting, Drilling, and Fastening"
+      ],
+      "valueChainStages": [
+        "Building Construction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/Drill_Press",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/Drill_Press"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    },
+    {
+      "sourceRow": 20,
+      "curationStatus": null,
+      "name": "CNC Machine",
+      "producer": "Open Source Ecology",
+      "designer": null,
+      "purpose": "Modular machine tool configurable as lathe, mill, or drill press.",
+      "description": null,
+      "category": "Construction",
+      "subCategories": [
+        "Cutting, Drilling, and Fastening"
+      ],
+      "valueChainStages": [
+        "Preconstruction"
+      ],
+      "sourceLinkText": "https://wiki.opensourceecology.org/wiki/CNC_Machine",
+      "urls": [
+        "https://wiki.opensourceecology.org/wiki/CNC_Machine"
+      ],
+      "manufacturingProcesses": [],
+      "priceUsd": null,
+      "tariffCode": null,
+      "hardwareLicense": null,
+      "oshwaUid": null,
+      "technologyReadinessLevel": null,
+      "ceCertificate": null
+    }
+  ]
+}

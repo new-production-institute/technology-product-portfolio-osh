@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Health technology portfolio JSON data",
-  "description": "Normalized JSON representation of the Health worksheet in the mirrored technology product portfolio.",
+  "title": "Food technology portfolio JSON data",
+  "description": "Normalized JSON representation of the Food worksheet in the mirrored technology product portfolio.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -27,19 +27,18 @@
           "const": "res/var/data/technology-product-portfolio.ods"
         },
         "sheet": {
-          "const": "Health"
+          "const": "Food"
         },
         "sha256": {
           "type": "string",
-          "pattern": "^[a-f0-9]{64}$",
-          "description": "SHA-256 digest of the exact ODS file used for conversion."
+          "pattern": "^[a-f0-9]{64}$"
         }
       }
     },
     "records": {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/healthRecord"
+        "$ref": "#/$defs/foodRecord"
       }
     }
   },
@@ -57,24 +56,6 @@
         "minLength": 1
       },
       "uniqueItems": true
-    },
-    "numberRange": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "minimum",
-        "maximum"
-      ],
-      "properties": {
-        "minimum": {
-          "type": "number",
-          "minimum": 0
-        },
-        "maximum": {
-          "type": "number",
-          "minimum": 0
-        }
-      }
     },
     "trlRange": {
       "type": "object",
@@ -96,60 +77,46 @@
         }
       }
     },
-    "healthRecord": {
+    "foodRecord": {
       "type": "object",
       "additionalProperties": false,
       "required": [
         "sourceRow",
         "curationStatus",
-        "flagship",
-        "flagshipRationale",
         "name",
         "producer",
         "designer",
         "purpose",
         "description",
         "category",
-        "functionalCategories",
-        "carePhases",
+        "subCategories",
+        "valueChainStages",
         "sourceLinkText",
         "urls",
         "manufacturingProcesses",
         "priceUsd",
+        "tariffCode",
         "hardwareLicense",
         "oshwaUid",
         "technologyReadinessLevel",
-        "medicalCertification",
-        "euMedicalDeviceClass",
-        "curationNotes"
+        "ceCertificate"
       ],
       "properties": {
         "sourceRow": {
           "type": "integer",
-          "minimum": 3,
-          "description": "One-based row number in the Health worksheet; retained for traceability, not as a permanent identifier.",
+          "minimum": 4,
+          "description": "One-based source row retained for traceability.",
           "x-transform": "source-row-number"
         },
         "curationStatus": {
           "$ref": "#/$defs/nullableString",
-          "description": "Internal curation marker such as NPI-related or ?.",
           "x-source-column": "Column 1",
-          "x-transform": "nullable-string"
-        },
-        "flagship": {
-          "$ref": "#/$defs/nullableString",
-          "x-source-column": "Flagship",
-          "x-transform": "nullable-string"
-        },
-        "flagshipRationale": {
-          "$ref": "#/$defs/nullableString",
-          "x-source-column": "Why Flagship",
           "x-transform": "nullable-string"
         },
         "name": {
           "type": "string",
           "minLength": 1,
-          "x-source-column": "Name",
+          "x-source-column": "Project/Product Name",
           "x-transform": "required-string"
         },
         "producer": {
@@ -173,24 +140,22 @@
           "x-transform": "nullable-string"
         },
         "category": {
-          "$ref": "#/$defs/nullableString",
+          "const": "Food",
           "x-source-column": "Category",
-          "x-transform": "nullable-string"
+          "x-transform": "required-string"
         },
-        "functionalCategories": {
+        "subCategories": {
           "$ref": "#/$defs/stringList",
-          "description": "Functional categories parsed as an RFC 4180-style CSV row so quoted labels containing commas remain intact.",
-          "x-source-column": "Functional Category",
+          "x-source-column": "Sub-Category",
           "x-transform": "csv-string-list"
         },
-        "carePhases": {
+        "valueChainStages": {
           "$ref": "#/$defs/stringList",
-          "x-source-column": "Care Phase",
+          "x-source-column": "Value Chain Stage",
           "x-transform": "csv-string-list"
         },
         "sourceLinkText": {
           "$ref": "#/$defs/nullableString",
-          "description": "Original URL-column text retained because the source also contains bare DOIs and free-form notes.",
           "x-source-column": "URL",
           "x-transform": "nullable-string"
         },
@@ -201,7 +166,6 @@
             "format": "uri"
           },
           "uniqueItems": true,
-          "description": "Every HTTP or HTTPS URL extracted from the source cell, plus bare DOI values converted to https://doi.org URLs, preserving source order.",
           "x-source-column": "URL",
           "x-transform": "http-url-and-doi-list"
         },
@@ -211,31 +175,23 @@
           "x-transform": "csv-string-list"
         },
         "priceUsd": {
-          "description": "A single non-negative USD amount, an inclusive minimum/maximum range, or null.",
-          "oneOf": [
-            {
-              "type": "number",
-              "minimum": 0
-            },
-            {
-              "$ref": "#/$defs/numberRange"
-            },
-            {
-              "type": "null"
-            }
-          ],
+          "$ref": "#/$defs/nullableString",
+          "description": "Source price text is preserved because values include qualifiers and abbreviations.",
           "x-source-column": "Price (USD)",
-          "x-transform": "number-or-hyphen-range"
+          "x-transform": "nullable-string"
+        },
+        "tariffCode": {
+          "$ref": "#/$defs/nullableString",
+          "x-source-column": "Tariff Code",
+          "x-transform": "nullable-string"
         },
         "hardwareLicense": {
           "$ref": "#/$defs/nullableString",
-          "description": "License text is preserved verbatim after trimming because the source includes SPDX identifiers and free-form values.",
           "x-source-column": "Hardware License",
           "x-transform": "nullable-string"
         },
         "oshwaUid": {
           "$ref": "#/$defs/nullableString",
-          "description": "OSHWA UID source value. It is not pattern-constrained because the current worksheet includes unnormalized entries.",
           "x-source-column": "OSHWA UID",
           "x-transform": "nullable-string"
         },
@@ -255,22 +211,11 @@
             }
           ],
           "x-source-column": "TRL",
-          "x-transform": "integer-or-slash-range"
+          "x-transform": "integer-or-slash-range-or-na"
         },
-        "medicalCertification": {
+        "ceCertificate": {
           "$ref": "#/$defs/nullableString",
-          "x-source-column": "Medical Certification",
-          "x-transform": "nullable-string"
-        },
-        "euMedicalDeviceClass": {
-          "$ref": "#/$defs/nullableString",
-          "x-source-column": "Medical Device Class (EU MDR)",
-          "x-transform": "nullable-string"
-        },
-        "curationNotes": {
-          "$ref": "#/$defs/nullableString",
-          "description": "Internal notes from the unlabeled twentieth source column.",
-          "x-source-column": "Curation Notes",
+          "x-source-column": "CE Certificate",
           "x-transform": "nullable-string"
         }
       }
@@ -278,8 +223,8 @@
   },
   "x-conversion": {
     "input": "res/var/data/technology-product-portfolio.ods",
-    "sheet": "Health",
-    "output": "res/var/data/health.json",
+    "sheet": "Food",
+    "output": "res/var/data/food.json",
     "serialization": {
       "format": "json",
       "jsonIndent": 2
@@ -287,12 +232,9 @@
     "rows": {
       "licenseReference": 1,
       "header": 2,
-      "dataStart": 3
+      "dataStart": 4
     },
-    "skipRowWhenColumnIsBlank": "Name",
-    "unnamedColumns": {
-      "20": "Curation Notes"
-    },
+    "skipRowWhenColumnIsBlank": "Project/Product Name",
     "cellText": {
       "paragraphSeparator": "\n",
       "trimOuterWhitespace": true
@@ -302,62 +244,19 @@
         "result": "one-based ODS row number"
       },
       "required-string": {
-        "steps": [
-          "extract-cell-text",
-          "trim"
-        ]
+        "result": "trimmed nonempty string"
       },
       "nullable-string": {
-        "steps": [
-          "extract-cell-text",
-          "trim",
-          "empty-string-to-null"
-        ]
+        "result": "trimmed string or null"
       },
       "csv-string-list": {
-        "steps": [
-          "extract-cell-text",
-          "parse-single-rfc4180-record",
-          "trim-items",
-          "remove-empty-items",
-          "deduplicate-preserving-order"
-        ],
-        "delimiter": ",",
-        "quoteCharacter": "\"",
-        "emptyResult": []
+        "result": "ordered unique RFC 4180 string list"
       },
       "http-url-and-doi-list": {
-        "steps": [
-          "extract-cell-text",
-          "extract-http-and-https-urls-and-bare-dois",
-          "convert-bare-dois-to-https-doi-org-urls",
-          "deduplicate-preserving-order"
-        ],
-        "emptyResult": []
+        "result": "ordered unique URL list"
       },
-      "number-or-hyphen-range": {
-        "steps": [
-          "extract-cell-text",
-          "trim",
-          "empty-string-to-null",
-          "parse-json-number-or-two-number-hyphen-range"
-        ],
-        "rangeResult": {
-          "minimum": "left number",
-          "maximum": "right number"
-        }
-      },
-      "integer-or-slash-range": {
-        "steps": [
-          "extract-cell-text",
-          "trim",
-          "empty-string-to-null",
-          "parse-json-integer-or-two-integer-slash-range"
-        ],
-        "rangeResult": {
-          "minimum": "left integer",
-          "maximum": "right integer"
-        }
+      "integer-or-slash-range-or-na": {
+        "result": "TRL integer, inclusive range, or null"
       }
     }
   }
