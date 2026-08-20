@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Browse open technology projects for food systems.">
-    <meta name="theme-color" content="#f5f6f8">
+    <meta name="theme-color" content="#ffffff">
     <title>Food | Technology Product Portfolio</title>
-    <link rel="icon" href="data:,">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 L90 27 L90 73 L50 96 L10 73 L10 27 Z' fill='none' stroke='%23fcb900' stroke-width='12'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="assets/site.css">
     <script src="assets/site.js" defer></script>
   </head>
@@ -14,7 +14,12 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="shell masthead">
-        <a class="wordmark" href="index.html">Technology Product Portfolio</a>
+        <a class="wordmark" href="index.html">
+          <svg class="hex hex-mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+            <path class="hex__ring" d="M50 4 L90 27 L90 73 L50 96 L10 73 L10 27 Z"/>
+          </svg>
+          <span class="wordmark__text">Technology Product Portfolio</span>
+        </a>
         <nav class="primary-nav" aria-label="Primary navigation">
           <ul>
             <li><a href="health.html">Health</a></li>
@@ -28,8 +33,14 @@
     <main id="main-content">
       <section class="hero hero--domain">
         <div class="shell">
-          <p class="eyebrow">Portfolio domain</p>
-          <h1>Food</h1>
+          <div class="hero__brand">
+            <svg class="hex hex-badge" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <path class="hex__ring" d="M50 4 L90 27 L90 73 L50 96 L10 73 L10 27 Z"/>
+              <path class="hex__glyph" d="M50 72 V44 M50 56 C38 56 31 48 31 37 C43 37 50 45 50 56 Z M50 50 C62 50 69 42 69 31 C57 31 50 39 50 50 Z"/>
+            </svg>
+            <p class="eyebrow">Portfolio domain</p>
+          </div>
+          <h1><span class="mark">Food</span></h1>
           <p class="hero__intro">
             Open technology projects supporting farming, monitoring, processing,
             packaging, logistics, and food-system operations.
@@ -45,7 +56,7 @@
       <section class="section" aria-labelledby="catalog-title">
         <div class="shell">
           <header class="catalog-header">
-            <h2 id="catalog-title">Browse Food projects</h2>
+            <h2 id="catalog-title"><span class="mark">Browse Food projects</span></h2>
             <p class="section__intro">
               Search project descriptions or narrow the portfolio by subcategory and
               value-chain stage. Open a row for production, licensing, and source details.

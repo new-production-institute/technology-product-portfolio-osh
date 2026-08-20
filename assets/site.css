@@ -1,17 +1,55 @@
+/* ==========================================================================
+   Technology Product Portfolio
+   Visual language after the New Production Institute: bold black Poppins,
+   a single amber accent used as a highlight bar, and the hexagon mark.
+
+   Amber (#fcb900) reaches only 1.75:1 against white, so it is never used as
+   text or link colour. It carries meaning as a filled bar behind black text
+   (12:1) or as a thick underline, always paired with a non-colour cue.
+   ========================================================================== */
+
+/* Poppins is loaded from a self-hosted copy for data-protection reasons.
+   Drop poppins-400/600/700.woff2 into assets/fonts/ to complete the look;
+   until then the geometric fallbacks below are used automatically. */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Poppins Regular"), local("Poppins"), url("fonts/poppins-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Poppins SemiBold"), url("fonts/poppins-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Poppins Bold"), url("fonts/poppins-700.woff2") format("woff2");
+}
+
 :root {
-  --background: #f5f6f8;
+  --background: #ffffff;
   --surface: #ffffff;
-  --text: #14171a;
-  --muted: #5b6470;
-  --line: #d7dbe1;
-  --primary: #075e8c;
-  --focus: #b44a1c;
-  --health: #a53a3a;
-  --food: #2f6b49;
-  --construction: #8a5a13;
-  --domain: var(--primary);
+  --band: #f4f4f4;
+  --band-strong: #eaeaea;
+  --text: #000000;
+  --muted: #5a5a5a;
+  --line: #e2e2e2;
+  --accent: #fcb900;
+  --accent-deep: #e0a300;
+  --radius: 0.25rem;
+  --bar: 0.34em;
   color-scheme: light;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Poppins", "Century Gothic", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
   font-size: 100%;
 }
 
@@ -30,30 +68,26 @@ body {
   background: var(--background);
   color: var(--text);
   font-size: 1.125rem;
-  line-height: 1.55;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
 
-body[data-domain="health"] {
-  --domain: var(--health);
-}
-
-body[data-domain="food"] {
-  --domain: var(--food);
-}
-
-body[data-domain="construction"] {
-  --domain: var(--construction);
+/* The three domains no longer differ by hue. They share the institute accent
+   and are told apart by their hexagon glyph and their label. */
+body[data-domain] {
+  --domain: var(--accent);
 }
 
 a {
-  color: var(--primary);
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.16em;
+  color: var(--text);
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.16em;
+  text-underline-offset: 0.22em;
 }
 
 a:hover {
-  text-decoration-thickness: 0.14em;
+  background: var(--accent);
+  text-decoration-thickness: 0.22em;
 }
 
 button,
@@ -64,7 +98,7 @@ select {
 }
 
 :focus-visible {
-  outline: 0.2rem solid var(--focus);
+  outline: 0.2rem solid var(--text);
   outline-offset: 0.2rem;
 }
 
@@ -74,8 +108,11 @@ select {
   top: 0.5rem;
   left: 0.5rem;
   padding: 0.65rem 0.9rem;
-  background: var(--surface);
+  border-radius: var(--radius);
+  background: var(--accent);
   color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
   transform: translateY(-150%);
 }
 
@@ -92,14 +129,62 @@ select {
   max-width: 68ch;
 }
 
+/* --------------------------------------------------------------------------
+   Brand marks: the amber highlight bar and the hexagon
+   -------------------------------------------------------------------------- */
+
+.mark {
+  padding-inline: 0.06em;
+  background-image: linear-gradient(to top, var(--accent) var(--bar), transparent var(--bar));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.hex {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hex__ring {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 7;
+  stroke-linejoin: round;
+}
+
+.hex__glyph {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hex-badge {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex: none;
+}
+
+.hex-mark {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: none;
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   -------------------------------------------------------------------------- */
+
 .site-header {
-  border-bottom: 1px solid var(--line);
   background: var(--surface);
+  box-shadow: 0 1px 0 var(--line);
 }
 
 .masthead {
   display: flex;
-  min-height: 5rem;
+  min-height: 5.5rem;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -109,17 +194,27 @@ select {
   display: inline-flex;
   min-height: 2.75rem;
   align-items: center;
+  gap: 0.65rem;
   color: var(--text);
   font-size: 1rem;
-  font-weight: 750;
-  letter-spacing: 0.01em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
   text-decoration: none;
+}
+
+.wordmark:hover {
+  background: transparent;
+}
+
+.wordmark:hover .wordmark__text {
+  background: var(--accent);
 }
 
 .primary-nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem 1.4rem;
+  gap: 0.4rem 1.75rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -131,34 +226,49 @@ select {
   align-items: center;
   color: var(--text);
   font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
 }
 
-.primary-nav a:hover,
-.primary-nav a[aria-current="page"] {
-  text-decoration: underline;
-  text-decoration-color: var(--domain);
-  text-decoration-thickness: 0.2rem;
-  text-underline-offset: 0.35rem;
+.primary-nav a:hover {
+  background: transparent;
+  box-shadow: inset 0 -0.55rem 0 var(--accent);
 }
+
+.primary-nav a[aria-current="page"] {
+  box-shadow: inset 0 -0.55rem 0 var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
 
 .hero {
   padding-block: clamp(4rem, 9vw, 7.5rem);
-  border-bottom: 1px solid var(--line);
 }
 
 .hero--domain {
-  border-top: 0.45rem solid var(--domain);
   padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.hero__brand {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
 }
 
 .eyebrow {
   margin: 0 0 1rem;
   color: var(--muted);
-  font-size: 0.85rem;
-  font-weight: 750;
-  letter-spacing: 0.09em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.hero__brand .eyebrow {
+  margin-bottom: 0;
 }
 
 h1,
@@ -173,97 +283,105 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.18;
   text-wrap: balance;
 }
 
 h1 {
-  max-width: 18ch;
-  margin-bottom: 1.5rem;
-  font-size: clamp(2.5rem, 6vw, 4.6rem);
-  letter-spacing: -0.045em;
+  max-width: 20ch;
+  margin-bottom: 1.75rem;
+  font-size: clamp(2.4rem, 5.4vw, 4.2rem);
+  line-height: 1.34;
 }
 
 h2 {
   margin-bottom: 1rem;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  letter-spacing: -0.025em;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.3;
 }
 
 h3 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 .hero__intro {
   max-width: 62ch;
   margin-bottom: 0;
   color: var(--muted);
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.3rem);
 }
 
 .hero__meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
-  margin-top: 2rem;
+  align-items: center;
+  gap: 0.75rem 1.75rem;
+  margin-top: 2.25rem;
   font-size: 1rem;
 }
 
 .hero__count {
+  padding-inline: 0.4em;
+  background: var(--accent);
+  border-radius: var(--radius);
   color: var(--text);
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .hero__meta a {
   display: inline-flex;
   min-height: 2.75rem;
   align-items: center;
+  font-weight: 600;
 }
+
+/* --------------------------------------------------------------------------
+   Sections
+   -------------------------------------------------------------------------- */
 
 .section {
   padding-block: clamp(3.5rem, 7vw, 6rem);
 }
 
-.section + .section {
-  border-top: 1px solid var(--line);
+body[data-page="landing"] main > section:nth-of-type(even) {
+  background: var(--band);
 }
 
 .section__intro {
   max-width: 62ch;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   color: var(--muted);
 }
+
+/* --------------------------------------------------------------------------
+   Domain cards
+   -------------------------------------------------------------------------- */
 
 .domain-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .domain-card {
   display: flex;
-  min-height: 19rem;
+  min-height: 20rem;
   flex-direction: column;
-  padding: 2rem;
-  border: 1px solid var(--line);
-  border-top: 0.45rem solid var(--card-accent);
+  padding: 2.25rem 2rem;
+  border-radius: var(--radius);
   background: var(--surface);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 10px 28px rgb(0 0 0 / 7%);
 }
 
-.domain-card--health {
-  --card-accent: var(--health);
-}
-
-.domain-card--food {
-  --card-accent: var(--food);
-}
-
-.domain-card--construction {
-  --card-accent: var(--construction);
+.domain-card .hex-badge {
+  margin-bottom: 1.5rem;
 }
 
 .domain-card h2 {
-  font-size: 1.8rem;
+  margin-bottom: 0.85rem;
+  font-size: 1.7rem;
 }
 
 .domain-card p {
@@ -274,87 +392,111 @@ h3 {
   display: inline-flex;
   min-height: 2.75rem;
   align-items: center;
+  align-self: flex-start;
   margin-top: auto;
   font-weight: 700;
 }
 
 .domain-card__count {
   display: block;
-  margin-top: 0.5rem;
-  color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 650;
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
+
+/* --------------------------------------------------------------------------
+   Principles
+   -------------------------------------------------------------------------- */
 
 .principles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
-  margin: 2.5rem 0 0;
+  gap: 2.5rem;
+  margin: 3rem 0 0;
   padding: 0;
   list-style: none;
+}
+
+.principles li {
+  padding-top: 1.25rem;
+  border-top: 0.3rem solid var(--accent);
 }
 
 .principles strong {
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .principles span {
   color: var(--muted);
 }
 
+/* --------------------------------------------------------------------------
+   Catalog controls
+   -------------------------------------------------------------------------- */
+
 .catalog-header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .catalog-controls {
   display: grid;
   grid-template-columns: minmax(15rem, 1fr) minmax(11rem, auto) auto;
   align-items: end;
-  gap: 1rem;
+  gap: 1.25rem;
   margin-bottom: 3rem;
-  padding: 1.5rem;
-  border: 1px solid var(--line);
-  background: var(--surface);
+  padding: 1.75rem;
+  border-radius: var(--radius);
+  background: var(--band);
 }
 
 .control {
   display: grid;
-  gap: 0.45rem;
+  gap: 0.5rem;
 }
 
 .control label {
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .control input,
 .control select {
   width: 100%;
   min-height: 3rem;
-  border: 1px solid var(--muted);
-  border-radius: 0;
+  padding: 0.6rem 0.8rem;
+  border: 0.125rem solid var(--text);
+  border-radius: var(--radius);
   background: var(--surface);
-  padding: 0.6rem 0.75rem;
+}
+
+.control input:hover,
+.control select:hover {
+  border-color: var(--accent-deep);
 }
 
 .button {
   min-height: 3rem;
-  border: 2px solid var(--primary);
-  border-radius: 0;
-  background: transparent;
-  color: var(--primary);
-  padding: 0.55rem 1rem;
-  font-weight: 700;
+  padding: 0.55rem 1.5rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--text);
+  color: var(--surface);
   cursor: pointer;
+  font-weight: 700;
 }
 
 .button:hover {
-  background: var(--primary);
-  color: var(--surface);
+  background: var(--accent);
+  color: var(--text);
 }
+
+/* --------------------------------------------------------------------------
+   Filters
+   -------------------------------------------------------------------------- */
 
 .catalog-layout {
   display: grid;
@@ -369,7 +511,7 @@ h3 {
 
 .filter-panel > summary {
   cursor: pointer;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .filter-groups {
@@ -384,14 +526,16 @@ h3 {
 }
 
 .filter-group__title {
-  margin-bottom: 0.85rem;
-  font-size: 1rem;
-  font-weight: 750;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 0.25rem solid var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .filter-options {
   display: grid;
-  gap: 0.55rem;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -402,20 +546,24 @@ h3 {
   min-height: 2.75rem;
   grid-template-columns: 1.35rem minmax(0, 1fr);
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.6rem;
 }
 
 .filter-option__input {
   width: 1.2rem;
   height: 1.2rem;
   margin: 0;
-  accent-color: var(--domain);
+  accent-color: var(--text);
 }
 
 .filter-option__label {
   font-size: 0.95rem;
-  line-height: 1.4;
+  line-height: 1.45;
 }
+
+/* --------------------------------------------------------------------------
+   Results and records
+   -------------------------------------------------------------------------- */
 
 .results-header {
   display: flex;
@@ -423,7 +571,7 @@ h3 {
   align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
-  border-bottom: 1px solid var(--text);
+  border-bottom: 0.25rem solid var(--text);
 }
 
 .results-header h3 {
@@ -433,8 +581,8 @@ h3 {
 .results-count {
   margin: 0;
   color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 650;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .record {
@@ -442,7 +590,9 @@ h3 {
 }
 
 .record[open] {
-  background: var(--surface);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--band);
+  box-shadow: inset 0.35rem 0 0 var(--accent);
 }
 
 .record__summary {
@@ -463,10 +613,10 @@ h3 {
 }
 
 .record__summary::before {
-  color: var(--domain);
+  color: var(--text);
   content: "+";
   font-size: 1.4rem;
-  font-weight: 750;
+  font-weight: 700;
   line-height: 1.1;
 }
 
@@ -492,9 +642,10 @@ h3 {
 }
 
 .record__name {
-  font-size: 1.2rem;
-  font-weight: 750;
-  line-height: 1.3;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
 }
 
 .record__producer {
@@ -505,29 +656,37 @@ h3 {
 
 .record__purpose {
   max-width: 60ch;
+  color: var(--muted);
 }
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin: 0.85rem 0 0;
+  margin: 0.9rem 0 0;
   padding: 0;
   list-style: none;
 }
 
 .tag {
-  border: 1px solid var(--line);
-  padding: 0.15rem 0.45rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius);
+  background: var(--band-strong);
   color: var(--muted);
   font-size: 0.78rem;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
+.record[open] .tag {
+  background: var(--surface);
+}
+
+/* "Featured" keeps its word as well as its amber fill, so the meaning never
+   rests on colour alone. */
 .tag--featured {
-  border-color: var(--domain);
+  background: var(--accent);
   color: var(--text);
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .record__body {
@@ -550,7 +709,7 @@ h3 {
 .record__term,
 .record__definition {
   margin: 0;
-  padding: 0.65rem 0;
+  padding: 0.7rem 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -558,7 +717,7 @@ h3 {
   padding-right: 1rem;
   color: var(--muted);
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .record__definition {
@@ -570,7 +729,7 @@ h3 {
 }
 
 .record__subheading {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   font-size: 1rem;
 }
 
@@ -598,20 +757,27 @@ h3 {
 }
 
 .error-state {
-  color: #8f2f2f;
+  padding-left: 1rem;
+  border-bottom: 0;
+  box-shadow: inset 0.35rem 0 0 #b3261e;
+  color: #b3261e;
   font-weight: 700;
 }
 
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
 .site-footer {
-  border-top: 1px solid var(--line);
-  background: var(--surface);
+  background: var(--band);
+  box-shadow: inset 0 0.3rem 0 var(--accent);
 }
 
 .footer-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(15rem, 1fr);
   gap: 3rem;
-  padding-block: 3rem;
+  padding-block: 3.5rem;
   font-size: 0.95rem;
 }
 
@@ -638,6 +804,10 @@ h3 {
   white-space: nowrap;
   border: 0;
 }
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
 
 @media (min-width: 50rem) {
   .filter-panel > summary {
@@ -684,8 +854,8 @@ h3 {
   }
 
   .filter-panel {
-    border-block: 1px solid var(--line);
     padding-block: 0.9rem;
+    border-block: 1px solid var(--line);
   }
 
   .filter-groups {
@@ -714,13 +884,14 @@ h3 {
     font-size: 1rem;
   }
 
-  .primary-nav ul {
-    gap-inline: 0.9rem;
+  .hex-badge {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .catalog-controls,
   .domain-card {
-    padding: 1.15rem;
+    padding: 1.25rem;
   }
 
   .record__facts {
@@ -753,8 +924,12 @@ h3 {
 
 @media (forced-colors: active) {
   .domain-card,
-  .hero--domain,
-  .tag--featured {
-    border-color: CanvasText;
+  .record[open] {
+    border: 1px solid CanvasText;
+  }
+
+  .hex__ring,
+  .hex__glyph {
+    stroke: CanvasText;
   }
 }
