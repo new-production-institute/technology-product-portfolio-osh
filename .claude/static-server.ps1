@@ -11,6 +11,7 @@ $mimeMap = @{
   ".js"   = "text/javascript; charset=utf-8"
   ".json" = "application/json; charset=utf-8"
   ".ods"  = "application/vnd.oasis.opendocument.spreadsheet"
+  ".woff2" = "font/woff2"
   ".svg"  = "image/svg+xml"
   ".png"  = "image/png"
   ".ico"  = "image/x-icon"
@@ -37,7 +38,10 @@ while ($listener.IsListening) {
       $response.ContentType = $contentType
       $bytes = [System.IO.File]::ReadAllBytes($fullPath)
       $response.ContentLength64 = $bytes.Length
-      $response.OutputStream.Write($bytes, 0, $bytes.Length)
+      # A HEAD response carries the headers only; writing a body would fail.
+      if ($request.HttpMethod -ne "HEAD") {
+        $response.OutputStream.Write($bytes, 0, $bytes.Length)
+      }
     } else {
       $response.StatusCode = 404
     }
