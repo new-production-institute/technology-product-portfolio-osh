@@ -27,6 +27,7 @@
 - May consume generated data but must not edit it.
 - Must not change `spec/`, `src/script/`, `res/var/data/`, or `res/data/`.
 - Must not change schemas, mappings, pipeline behavior, or data semantics.
+- Use NASA functional programming paradigm with minimal side effects. Vanilla JS, HTML without Frameworks. Suitable for Static Website.
 
 ## Design rules
 
