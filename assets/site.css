@@ -129,6 +129,9 @@ select {
   max-width: 68ch;
 }
 
+.measure--spaced {
+  margin-top: 1.5rem;
+}
 /* --------------------------------------------------------------------------
    Brand marks: the amber highlight bar and the hexagon
    -------------------------------------------------------------------------- */
